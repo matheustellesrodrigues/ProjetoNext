@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 interface NavBarProps{
-    active: "dashboard" | "movimentacoes" | "categorias"
+    active: "Página Inicial" | "Atendimento" | "Login"
 }
 
 export default function NavBar(props: NavBarProps){
@@ -11,17 +11,17 @@ export default function NavBar(props: NavBarProps){
 
 
     return(
-        <nav className="flex justify-between items-center bg-slate-900 w-full px-5 py-3"> 
-        <h1 className="text-3xl font-bold">Cash FLow Pro</h1>
+        <nav className="flex justify-between items-center bg-slate-700 w-full px-5 py-3"> 
+        <h1 className="text-3xl font-bold">SleepGood</h1>
         <ul className="flex gap-8">
-          <li className="border-b-8 border-pink-500 pb-2"><Link href="/">Dashboard</Link></li>
-          <li><Link href="/movimentacoes">Movimentações</Link></li>
-          <li><Link href="/categorias">Categoria</Link></li>
+          <li className="pb-2"><Link href="/">Pagina Inicial</Link></li>
+          <li><Link href="/movimentacoes">Atendimento</Link></li>
+          <li><Link href="/categorias">Login</Link></li>
           
         </ul>
 
         <div className="w-14 rounded-full overflow-hidden">
-          <img src="https://i.pravatar.cc/150" alt="avatar do usuario" />
+          <img src="https://github.com/matheustellesrodrigues.png" alt="avatar do usuario" />
         </div>
       </nav>
     )
