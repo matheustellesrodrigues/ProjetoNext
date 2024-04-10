@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative flex flex-col min-h-screen">
       <NavBar active="Página Inicial"/>
       <main className="flex-grow flex items-end justify-start px-4 pb-4">
-        <div className="absolute top-20 left-0 bg-gray-200 p-4">
+        <div className="absolute top-20 left-0  p-4">
           <p className="font-bold">Casal Master Duplo Triplo Queen Suite</p>
         </div>
         <div className="flex flex-col items-start">
