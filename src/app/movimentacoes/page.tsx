@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
+import './atendimento.css';
 
 interface Room {
   id: number;
@@ -31,9 +32,12 @@ export default function Atendimento() {
             <h3>{room.name}</h3>
             <p>Preço: R${room.price},00</p>
             <p>Tamanho: {room.size}</p>
-            <p>TV: {room.hasTV ? 'Sim' : 'Não'}</p>
-            <p>Frigobar: {room.hasFridge ? 'Sim' : 'Não'}</p>
-            <p>Ar-condicionado: {room.hasAC ? 'Sim' : 'Não'}</p>
+            {room.hasTV && <p>TV: Sim</p>}
+            {room.hasFridge && <p>Frigobar: Sim</p>}
+            {room.hasAC && <p>Ar-condicionado: Sim</p>}
+            {!room.hasTV && <p>TV: Não</p>}
+            {!room.hasFridge && <p>Frigobar: Não</p>}
+            {!room.hasAC && <p>Ar-condicionado: Não</p>}
           </div>
         ))}
       </div>

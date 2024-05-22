@@ -1,7 +1,8 @@
 'use client'
 import { useState } from "react";
 import NavBar from "./components/NavBar";
-import './Page.css'
+
+import './inicial.css'
 
 type QuartoInfo = {
   tipo: string;
