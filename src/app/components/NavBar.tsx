@@ -15,7 +15,7 @@ export default function NavBar(props: NavBarProps){
         <h1 className="text-3xl font-bold">SleepGood</h1>
         <ul className="flex gap-8">
           <li className="pb-2"><Link href="/">Pagina Inicial</Link></li>
-          <li><Link href="/movimentacoes">Atendimento</Link></li>
+          <li><Link href="/atendimento">Atendimento</Link></li>
           <li><Link href="/categorias">Login</Link></li>
           
         </ul>

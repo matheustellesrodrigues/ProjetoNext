@@ -1,3 +1,48 @@
-.form{
-    margin: 5rem;
-}
+/* Adicione este CSS ao seu arquivo Page.css */
+
+input {
+    color: black; /* Define a cor do texto para preto */
+  }
+  
+  .pagina-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quartos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .quarto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto dentro dos blocos de quarto */
+  }
+  
+  .info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form input {
+    color: black; /* Define a cor do texto para preto */
+  }
+  
+  /* Estilos adicionais para a página de login */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
